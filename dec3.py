@@ -1,1 +1,15 @@
-# Missing data is an everyday problem that data scientists need to deal with. Write a function called replace_nans(array) that takes as input a NumPy array and returns it after replacing all np.nan (numpy.nan) values with -1.
+# Write a funtion called generate_matrix_9x9() that generates a 9x9 matrix with all elements equal 2 except the one in the middle which should be equal 0. If you are not a beginner, set only the boundary entries to 2 and the remaining ones to 0 :)
+
+
+import numpy as np
+
+
+def generate_matrix_9x9():
+    array = np.full((3, 3), 2)
+    array[1, 1] = 0
+    print(array)
+    return array
+
+
+if __name__ == '__main__':
+    generate_matrix_9x9()
