@@ -6,9 +6,10 @@ import pandas as pd
 
 
 def occurrences(data):
-    # YOUR CODE GOES HERE
-    return
+    print(data.value_counts())
+    return data.value_counts()
 
 
-if __name__ == '__name__':
-    occurrences()
+if __name__ == '__main__':
+    s = pd.Series([1, 2, 3, 4, 2])
+    occurrences(s)

@@ -7,9 +7,7 @@ import numpy as np
 
 def can_multiply(m1, m2):
     first_columns = m1.shape[1]
-    print(first_columns)
     second_rows = m2.shape[0]
-    print(second_rows)
     if first_columns == second_rows:
         return True
     else:

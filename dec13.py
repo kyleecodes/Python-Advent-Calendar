@@ -6,14 +6,11 @@ import pandas as pd
 
 
 def create_and_sort_series(data):
-    # YOUR CODE GOES HERE
-    return
-
-
-# EXAMPLE INPUT LIST:
-# inp = [1,6,4,9,3,0]
-# print(create_and_sort_series(inp))
+    series = pd.Series(data)
+    add_2 = series.append(pd.Series([2]))
+    return add_2.sort_values(ascending=False)
 
 
 if __name__ == '__main__':
-    create_and_sort_series()
+    inp = [1, 6, 4, 9, 3, 0]
+    create_and_sort_series(inp)

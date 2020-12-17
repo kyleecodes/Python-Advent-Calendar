@@ -7,9 +7,7 @@ import numpy as np
 def get_elements(arr):
     a = np.array(arr)
     greater_than_two = np.where(a > 2)
-    print(greater_than_two)
     new_array = np.median(greater_than_two)
-    print(new_array)
     return new_array
 
 

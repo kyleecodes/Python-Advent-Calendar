@@ -7,8 +7,7 @@ import numpy as np
 
 def weighted_average(arr):
     weighted = np.average(array)
-    print(weighted)
-    return
+    return weighted
 
 
 if __name__ == '__main__':

@@ -9,11 +9,10 @@
 
 import numpy as np
 
-def half_xmas_tree(depth):
-  array = np.full((depth, depth), 2)
-  print(array)
-  return
 
+def half_xmas_tree(depth):
+    array = np.full((depth, depth), 2)
+    return
 
 
 if __name__ == '__main__':

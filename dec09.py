@@ -8,7 +8,6 @@ import numpy as np
 
 def initialize_weights(rows, columns):
     s = np.random.uniform(0, 2, size=(rows, columns))
-    print(s)
     return s
 
 

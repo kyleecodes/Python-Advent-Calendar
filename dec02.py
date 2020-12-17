@@ -10,7 +10,6 @@ import numpy as np
 def replace_nans(array):
     where_are_NaNs = np.isnan(array)
     array[where_are_NaNs] = -1
-    print(array)
     return array
 
 

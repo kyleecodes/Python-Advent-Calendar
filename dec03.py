@@ -7,7 +7,6 @@ import numpy as np
 def generate_matrix_9x9():
     array = np.full((3, 3), 2)
     array[1, 1] = 0
-    print(array)
     return array
 
 
