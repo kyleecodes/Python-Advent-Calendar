@@ -1,15 +1,15 @@
-# Write a function called occurrences(series) that returns the frequency counts of number 2 of a given input series :)
-
+# Write a function called occurrences(data) that converts data (a dictionary) into series and returns the frequency count of of every number in this series.
 
 import numpy as np
 import pandas as pd
 
 
 def occurrences(data):
-    print(data.value_counts())
-    return data.value_counts()
+    series = pd.Series(data)
+    counts = series.value_counts()
+    return counts
 
 
 if __name__ == '__main__':
-    s = pd.Series([1, 2, 3, 4, 2])
-    occurrences(s)
+    days = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 2]
+    occurrences(days)
