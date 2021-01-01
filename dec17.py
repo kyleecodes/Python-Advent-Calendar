@@ -1,4 +1,4 @@
-# ser has missing dates and values, make all missing dates appear and fill up with value from previous dates
+# "ser" has missing dates and values, make all missing dates appear and fill up with value from previous dates
 
 import numpy as np
 import pandas as pd

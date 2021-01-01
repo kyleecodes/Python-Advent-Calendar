@@ -1,6 +1,6 @@
 
 
-# Write a function called get_joining_date(data) that takes as input a dictionary (see example below), turns it into Pandas dataframe, sets name as index, and returns the date on which Peter has joined the challenge :)
+# Write a function called get_joining_date(data) that takes as input a dictionary, turns it into Pandas dataframe, sets name as index, and returns the date on which Peter has joined the challenge :)
 
 import numpy as np
 import pandas as pd

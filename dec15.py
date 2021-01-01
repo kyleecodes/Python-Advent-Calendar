@@ -1,4 +1,4 @@
-# Write a function called where_is_2(series) that returns the position (integer) of the number 2 
+# Write a function called where_is_2(series) that returns the position (integer) of the number 2.
 
 import pandas as pd
 
