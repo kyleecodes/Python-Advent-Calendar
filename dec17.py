@@ -1,15 +1,14 @@
-# Write a function called get_joining_date(dict) that takes as input a dictionary (see example below, same as yesterday), turns it into Pandas dataframe, converts the column date_of_joining to datetime type, sets date_of_joining as index, and returns the name of the participant who joined the challenge on Dec 1st :)
+# ser has missing dates and values, make all missing dates appear and fill up with value from previous dates
 
 import numpy as np
 import pandas as pd
 
 
-def get_joining_date(dict):
-    # YOUR CODE GOES HERE
-    return
+def replace_missing_dates(series):
+    print(series.resample('D').ffill())
+    return series.resample('D').ffill()
 
 
 if __name__ == '__main__':
-    dict = {'name': ['John', 'Mary', 'Peter', 'Jeff', 'Bill'],
-            'date_of_joining': ['2020-11-25', '2020-11-26', '2020-11-30', '2020-11-27', '2020-12-01']}
-    get_joining_date(dict)
+    ser = pd.Series([1,10,3, np.nan], index=pd.to_datetime(['2000-01-01', '2000-01-03', '2000-01-06', '2000-01-08']))
+    replace_missing_dates(ser)
